@@ -5,7 +5,6 @@
     font-family: 'Lexend', sans-serif;
     color: #fff;
 }
-
 nav.navBar{
     padding: 20px;
     display: flex;
@@ -15,11 +14,9 @@ nav.navBar{
     width: 100%;
     text-decoration: none;
 }
-
 nav a{
     text-decoration: none;
 }
-
 ul.navBar{
     display: flex;
     background-color: #000;
@@ -29,29 +26,21 @@ ul.navBar{
     width: 100%;
     list-style: none;
 }
-
-/* img.imgLogo{
-    width: 250px;
-} */
-
- .product{
+.product{
     width: 300px;
 }
-
 .nuestrosProductos{
     display: flex;
 }
-
 h3{background-color: #000;
     padding: 15px;
     color: #fff;
     text-align: center;
+    margin: 0px;
 }
-
 .mate1{
     text-align: center;
 }
-
 .bienvenidos{
     background-image: url("../assets/img/fondo.jpg");
     background-repeat: no-repeat;
@@ -62,14 +51,12 @@ h3{background-color: #000;
     color: #fff;
     width: 100%;
 }
-
 .h1Index{
     font-size: 70px;
     background-size:auto;
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
 }
-
 .bienvenidos p{
     font-size: 30px;
     background-color: #000;
@@ -78,97 +65,77 @@ h3{background-color: #000;
     padding: 10px;
     width: 100%;
 }
-
 .tuMate{
     align-items: center;
     text-align: center;
-
 }
-
 img.product{
     width: 100%;
 }
-
 main.mates{
     display: flex;
     background-image: url("../assets/img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 main.mates p{
     color: #fff;
 }
-
 img.rrss{
     width: 40px;
     height: 40px;
 }
-
 footer{
-    display: flex;
+    /* display: flex; */
     color: #fff;
     background-color: #000;
     
 }
-
 .imgLogo{
     width: 100px;
 }
-
 .location{
     width: 40px;
     height: 40px;
 }
-
 footer h4{
     font-size: 30px;
 }
-
 .nuestrosProductos{
     background-color: #000;
     color: #fff;
     text-align: center;
     width: 100%;
 }
-
 .contacto{
     text-align: center;
 }
-
 iframe{
     width: 280px;
     height: 250px;
 }
-
 main.main p.tuMate{
     color: #AA8B56;
 }
-
 main{
     background-image: url("../assets/img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
-
 main.nosotros{
     text-align: center;
     padding: 200px;
     background-size: cover;
     letter-spacing: normal;
 }
-
 .buy {
     display: block;
 }
-
 .quienesSomos{
     background-color: rgba(0,0,0,0.7);
     border-radius: 30px;
     padding: 50px;
 }
-
 button{
     background-color: #AA8B56;
     color: #000;
@@ -176,41 +143,29 @@ button{
     padding: 10px;
     border: 0;
 }
-
 fieldset{
     text-align: center;
     height: 700px;
     font-size: 30px;
 }
-
 form{
     text-align: center;
 }
-
 .formulario{
     text-align: center;
     margin: 250px;
     background-color: rgba(0,0,0,0.7);
     padding: 50px;
     border-radius: 30px;
-
 }
-
 fieldset button{
     font-size: 20px;
 }
-
 input{
     width: 200px;
     height: 30px;
     color: #000;
 }
-
-/* footer .footer{
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    width: fit-content;
-} */
 .h1Tienda{
     background-color: #000;
     color: #AA8B56;
@@ -220,17 +175,13 @@ input{
 .ubicacion{
     align-content: end;
 }
-
 .producto{
     width: 320px;
 }
-
 .card p{
     width: 320px;
     text-align: center;
-    /* background-color: rgba(0,0,0,0.5); */
 }
-
 .containerCards{
     flex-direction: row;
     display: flex;
@@ -239,11 +190,9 @@ input{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
 div.card{
     background-color: rgba(0,0,0,0.5);
 }
-
 .buy .productos{
     display: flex;
     flex-direction: row;
@@ -253,18 +202,15 @@ div.card{
     padding: 10px;
     border: #AA8B56 2px solid;
 }
-
 .buy p{
     padding-left: 20px;
 }
-
 button a{
     font-size: 20px;
     align-items: center;
 }
-
-/* --------------------- MEDIA QUERIES -------------------------*/
-@media(min-width: 1501px) and (max-width: 2561px){
+/* --------------------------- MEDIA QUERIES -------------------------------*/
+@media(min-width: 2561px){
     nav.navBar{
         padding: 0px;
     }
@@ -302,7 +248,6 @@ button a{
     }
     .bienvenidos{
         width: 100%;
-        /* text-align: center; */
     }
     .h1Index{
         width: 100%;
@@ -317,7 +262,6 @@ button a{
         font-size: 50px;
     }
     footer.footer{
-        display: flex;
         width: 100%;
     }
     div.creador{
@@ -332,9 +276,19 @@ button a{
     div.productos{
         padding: 0px;
     }
+    footer.footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    div.creador{
+        align-items: center;
+    }
 }
 
-@media(min-width: 1026px) and (max-width: 1500px){  /* VER LA CLASE DE GRIDS PARA PONER EN EL FOOTER*/
+@media(min-width: 1500px){
     img.imgLogo{
         width: 150px;
     }
@@ -369,7 +323,6 @@ button a{
     }
     .bienvenidos{
         width: 100%;
-        /* text-align: center; */
     }
     .h1Index{
         width: 100%;
@@ -384,14 +337,10 @@ button a{
         font-size: 50px;
     }
     footer.footer{
-        display: flex;
         width: 100%;
     }
     div.creador{
         text-align: left;
-    }
-    .creador p{
-        
     }
     div.ubicacion{
         text-align:right;
@@ -403,22 +352,41 @@ button a{
     .quienesSomos h1{
         padding-bottom: 15px;
     }
+    footer.footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    div.creador{
+        align-items: center;
+    }
 }
 
-@media(max-width: 1025px) and (min-width: 769px){
+@media(min-width: 1290px){ 
     img.imgLogo{
         width: 150px;
     }
+    nav.navBar{
+        padding: 0px;
+    }
+    main{
+        padding: 0px
+    }
+    div.productos{
+        padding: 0px;
+    }
     .navBar li{
-        padding: 50px;
+        padding: 70px;
         text-align: center;
-        font-size: 20px;
+        font-size: 25px;
     }
     .nuestrosProductos p{
         padding: 10px;
     }
     footer{
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         
     }
@@ -431,7 +399,79 @@ button a{
     }
     .bienvenidos{
         width: 100%;
-        /* text-align: center; */
+    }
+    .h1Index{
+        width: 100%;
+        font-size: 80px;
+        text-align: center;
+    }
+    .ubicacion{
+        flex-direction: column;
+        padding: 10px;
+    }
+    p.tuMate{
+        font-size: 50px;
+    }
+
+    img.producto{
+        width: 170px;
+    }
+    footer.footer{
+        width: 100%;
+    }
+    div.creador{
+        text-align: left;
+    }
+    div.ubicacion{
+        text-align:right;
+    }
+    main.nosotros{
+        padding: 150px;
+        font-size: 30px;
+    }
+    .quienesSomos h1{
+        padding-bottom: 15px;
+    }
+    footer.footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    div.creador{
+        align-items: center;
+    }
+}
+
+@media(min-width: 1025px){
+    img.imgLogo{
+        width: 150px;
+    }
+    .navBar li{
+        padding: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    li{
+        padding: 20px;
+    }
+    .nuestrosProductos p{
+        padding: 10px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .creador{
+        font-size: small;
+        padding: 10px;
+    }
+    .contacto{
+        padding: 10px;
+    }
+    .bienvenidos{
+        width: 100%;
     }
     .h1Index{
         width: 100%;
@@ -454,21 +494,40 @@ button a{
     .productos p{
         font-size: 25px;
     }
+    section.containerCards{
+        display: flex;
+        flex-direction: row;
+    }
+    div.card p{
+        width: 170px;
+    }
+    img.producto{
+        width: 170px;
+    }
 }
 
-@media(max-width: 769px){
-    /* .navBar{
-        flex-direction: column;
+@media(min-width: 768px){
+    nav.navBar{
+        display: flex;
+        flex-direction: row;
         text-align: center;
-    } */
+    }
+    ul.navBar{
+        display: flex;
+        flex-direction: row;
+    }
     .navBar li{
         padding: 30px;
         text-align: left;
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        padding: 20px;
     }
     footer{
         flex-direction: column;
         text-align: center;
-        
     }
     .creador{
         font-size: small;
@@ -479,7 +538,6 @@ button a{
     }
     .bienvenidos{
         width: 100%;
-        /* text-align: center; */
     }
     .h1Index{
         width: 100%;
@@ -490,6 +548,8 @@ button a{
         padding: 10px;
     }
     .containerCards{
+        display: flex;
+        flex-direction: column;
         height:min-content;
         margin: 50px;
     }
@@ -502,7 +562,10 @@ button a{
     .quienesSomos h1{
         padding-bottom: 10px;
     }
-    img.producto{
+    div.quienesSomos p{
+        font-size: 20px;
+    }
+    img.product{
         width: 200px;
     }
     .productos p{
@@ -514,9 +577,24 @@ button a{
     div.formulario{
         margin: 100px;
     }
+    div .card{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+    section.containerCards{
+        display: flex;
+        flex-direction: row;
+    }
+    div.card p{
+        width: 170px;
+    }
+    img.producto{
+        width: 170px;
+    }
 }
 
-@media(max-width: 426px){
+@media(min-width: 425px){
     .nuestrosProductos{
         width: 100%;
         display: block;
@@ -527,7 +605,10 @@ button a{
         align-items: center;
     }
     .navBar li{
-        padding: 5px;
+        padding: 20px;
+    }
+    li{
+        padding: 20px;
     }
     footer{
         flex-direction: column;
@@ -538,7 +619,6 @@ button a{
     }
     .bienvenidos{
         width: 100%;
-        /* text-align: center; */
     }
     .h1Index{
         width: 100%;
@@ -582,7 +662,7 @@ button a{
     }
 }
 
-@media(max-width: 376px){
+@media(min-width: 376px){
     .nuestrosProductos{
         width: 100%;
         display: block;
@@ -592,7 +672,7 @@ button a{
         text-align: center;
     }
     .navBar li{
-        padding: 5px;
+        padding: 20px;
     }
     footer{
         flex-direction: column;
@@ -619,11 +699,9 @@ button a{
     .producto{
         width: 290px;
     }
-    
     .card p{
         width: 290px;
         text-align: center;
-        /* background-color: rgba(0,0,0,0.5); */
     }
     main.nosotros{
         text-align: center;
@@ -644,7 +722,7 @@ button a{
     }
 }
 
-@media(max-width: 320px){
+@media(min-width: 320px){
     .nuestrosProductos{
         width: 100%;
         display: block;
@@ -654,7 +732,7 @@ button a{
         text-align: center;
     }
     .navBar li{
-        padding: 5px;
+        padding: 20px;
     }
     footer{
         flex-direction: column;
@@ -671,20 +749,21 @@ button a{
         width: 100%;
         text-align: center;
     }
-    
     .containerCards{
         height:min-content;
         margin: 50px;
     }
     .producto{
-        width: 250px;
+        width: 100%;
         justify-items: center;
     }
-    
     .card p{
-        width: 250px;
+        width: 100%;
         text-align: center;
-        /* background-color: rgba(0,0,0,0.5); */
+    }
+    div.productos{
+        display: flex;
+        flex-direction: column;
     }
     main.nosotros{
         text-align: center;
@@ -696,6 +775,16 @@ button a{
     .quienesSomos h1{
         font-size: 20px;
         padding-bottom: 10px;
+    }
+    div.productos p{
+        font-size: 20px;
+    }
+    img.producto{
+        width: 120px;
+    }
+    button a{
+        font-size: 15px;
+        padding: 5px;
     }
     label{
         font-size: 15px;
