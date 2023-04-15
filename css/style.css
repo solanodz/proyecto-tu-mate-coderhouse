@@ -1,794 +1,1105 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lexend', sans-serif;
-    color: #fff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-nav.navBar{
-    padding: 20px;
+
+* {
+  font-family: "Lexend", sans-serif;
+  color: #fff;
+}
+
+header {
+  font-size: 20px;
+  background-color: black;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #000;
+  font-family: "Lexend", sans-serif;
+  width: 100%;
+  text-decoration: none;
+}
+header nav ul {
+  display: flex;
+  background-color: #000;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  list-style: none;
+}
+header nav ul li {
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+header nav ul li:hover {
+  font-size: 23px;
+  color: #AA8B56;
+}
+header img {
+  width: 150px;
+}
+header a {
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  background-image: url("../assets/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .bienvenidos {
+  background-size: cover;
+  padding: 50px 50px 800px 50px;
+  /* padding-left: 50px;
+  padding-bottom: 800px; */
+  color: #fff;
+  width: 100%;
+}
+main .h1Index {
+  font-size: 70px;
+  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+main .bienvenidos p {
+  font-size: 50px;
+  background-color: #000;
+  color: #AA8B56;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 30px;
+}
+main .tuMate {
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  background-color: #000;
+  font-size: 50px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+}
+
+.h1Tienda {
+  background-color: #000;
+  color: #AA8B56;
+  font-size: 70px;
+  text-align: center;
+}
+
+.card p {
+  width: 300px;
+  text-align: center;
+  padding: 5px;
+}
+
+.containerCards {
+  flex-direction: row;
+  display: flex;
+  height: 900px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.containerCards .card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 300px;
+}
+.containerCards img.producto {
+  align-items: center;
+  align-content: center;
+  width: 300px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.nosotros {
+  text-align: center;
+  padding: 200px;
+  background-size: cover;
+  letter-spacing: normal;
+}
+.nosotros .quienesSomos {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  padding: 50px;
+}
+
+.buy .productos {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  margin-top: 0px;
+  border: #AA8B56 2px solid;
+  border-radius: 10px;
+}
+.buy .productos .producto {
+  width: 250px;
+}
+.buy p {
+  padding-left: 20px;
+}
+
+button {
+  background-color: #AA8B56;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  border-style: none;
+}
+button a {
+  text-decoration: none;
+  font-style: none;
+  font-size: 20px;
+  align-items: center;
+}
+
+fieldset {
+  text-align: center;
+  height: 700px;
+  font-size: 30px;
+}
+fieldset button {
+  font-size: 20px;
+  background-color: #AA8B56;
+  margin: 10px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+}
+fieldset button a {
+  color: #fff;
+}
+fieldset legend {
+  font-size: 40px;
+  color: #AA8B56;
+  background-color: #000;
+}
+fieldset form {
+  text-align: center;
+}
+fieldset label {
+  font-size: 20px;
+}
+
+.formulario {
+  text-align: center;
+  margin: 180px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 30px;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  color: #000;
+  margin-bottom: 50px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+footer {
+  color: #fff;
+  background-color: #000;
+  flex-direction: row;
+  text-align: center;
+}
+footer .imgLogo {
+  width: 150px;
+}
+footer .location {
+  width: 40px;
+  height: 40px;
+}
+footer h4 {
+  font-size: 30px;
+}
+footer .nuestrosProductos {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+footer .contacto {
+  text-align: center;
+}
+footer .creador {
+  font-size: small;
+  padding: 10px;
+  align-items: center;
+}
+footer .contacto {
+  padding: 10px;
+}
+footer iframe {
+  width: 280px;
+  height: 250px;
+}
+footer img.rrss {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 320px) {
+  nav.navBar {
     display: flex;
-    color: #fff;
-    background-color: #000;
-    font-family: 'Lexend', sans-serif;
-    width: 100%;
-    text-decoration: none;
-}
-nav a{
-    text-decoration: none;
-}
-ul.navBar{
-    display: flex;
-    background-color: #000;
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-    list-style: none;
-}
-.product{
-    width: 300px;
-}
-.nuestrosProductos{
-    display: flex;
-}
-h3{background-color: #000;
-    padding: 15px;
-    color: #fff;
+    flex-direction: column;
     text-align: center;
-    margin: 0px;
-}
-.mate1{
-    text-align: center;
-}
-.bienvenidos{
-    background-image: url("../assets/img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 50px 800px 50px;
-    /* padding-left: 50px;
-    padding-bottom: 800px; */
-    color: #fff;
-    width: 100%;
-}
-.h1Index{
-    font-size: 70px;
-    background-size:auto;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px;
-}
-.bienvenidos p{
-    font-size: 30px;
-    background-color: #000;
-    /* background-size: contain; */
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-}
-.tuMate{
-    align-items: center;
-    text-align: center;
-}
-img.product{
-    width: 100%;
-}
-main.mates{
-    display: flex;
-    background-image: url("../assets/img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-main.mates p{
-    color: #fff;
-}
-img.rrss{
-    width: 40px;
-    height: 40px;
-}
-footer{
-    /* display: flex; */
-    color: #fff;
-    background-color: #000;
-    
-}
-.imgLogo{
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  nav.navBar img.imgLogo {
     width: 100px;
-}
-.location{
-    width: 40px;
-    height: 40px;
-}
-footer h4{
-    font-size: 30px;
-}
-.nuestrosProductos{
-    background-color: #000;
-    color: #fff;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 100%;
-}
-.contacto{
-    text-align: center;
-}
-iframe{
-    width: 280px;
-    height: 250px;
-}
-main.main p.tuMate{
-    color: #AA8B56;
-}
-main{
-    background-image: url("../assets/img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-main.nosotros{
-    text-align: center;
-    padding: 200px;
-    background-size: cover;
-    letter-spacing: normal;
-}
-.buy {
-    display: block;
-}
-.quienesSomos{
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 30px;
-    padding: 50px;
-}
-button{
-    background-color: #AA8B56;
-    color: #000;
-    margin: 10px;
-    padding: 10px;
-    border: 0;
-}
-fieldset{
-    text-align: center;
-    height: 700px;
-    font-size: 30px;
-}
-form{
-    text-align: center;
-}
-.formulario{
-    text-align: center;
-    margin: 250px;
-    background-color: rgba(0,0,0,0.7);
-    padding: 50px;
-    border-radius: 30px;
-}
-fieldset button{
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
     font-size: 20px;
-}
-input{
+    padding: 18px;
+  }
+  h1.h1Index {
+    font-size: 50px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 1900px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
     width: 200px;
-    height: 30px;
-    color: #000;
-}
-.h1Tienda{
-    background-color: #000;
-    color: #AA8B56;
-    font-size: 70px;
     text-align: center;
-}
-.ubicacion{
-    align-content: end;
-}
-.producto{
-    width: 320px;
-}
-.card p{
-    width: 320px;
+  }
+  div.containerCards div.card p {
+    font-size: 13px;
+    width: 200px;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 140px;
+  }
+  main.nosotros {
+    padding: 20px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 30px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 25px;
+    line-height: 70px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 13px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  div.buy div.productos p {
+    font-size: 16px;
+    padding: 0px;
     text-align: center;
-}
-.containerCards{
-    flex-direction: row;
-    display: flex;
-    height: 900px;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-div.card{
-    background-color: rgba(0,0,0,0.5);
-}
-.buy .productos{
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(0,0,0,0.5);
-    font-size: 35px;
-    align-items: center;
+  }
+  div.buy div.productos img.producto {
+    width: 150px;
+    border-radius: 10px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset div.formulario {
     padding: 10px;
-    border: #AA8B56 2px solid;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 200px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 25px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
 }
-.buy p{
-    padding-left: 20px;
-}
-button a{
+@media (min-width: 375px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  nav.navBar img.imgLogo {
+    width: 120px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
     font-size: 20px;
-    align-items: center;
+    padding: 18px;
+  }
+  h1.h1Index {
+    font-size: 50px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 2100px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 13px;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 160px;
+  }
+  main.nosotros {
+    padding: 20px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 30px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 16px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  div.buy div.productos p {
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+  }
+  div.buy div.productos img.producto {
+    width: 150px;
+    border-radius: 10px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 10px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
 }
-/* --------------------------- MEDIA QUERIES -------------------------------*/
-@media(min-width: 2561px){
-    nav.navBar{
-        padding: 0px;
-    }
-    nav.navBar{
-        padding: 0px;
-    }
-    main{
-        padding: 0px
-    }
-    div.productos{
-        padding: 0px;
-    }
-    img.imgLogo{
-        width: 150px;
-    }
-    .navBar li{
-        padding: 50px;
-        text-align: center;
-        font-size: 30px;
-    }
-    .nuestrosProductos p{
-        padding: 10px;
-    }
-    footer{
-        flex-direction: row;
-        text-align: center;
-        
-    }
-    .creador{
-        font-size: small;
-        padding: 10px;
-    }
-    .contacto{
-        padding: 10px;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        font-size: 80px;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-        padding: 10px;
-    }
-    p.tuMate{
-        font-size: 50px;
-    }
-    footer.footer{
-        width: 100%;
-    }
-    div.creador{
-        text-align: left;
-    }
-    div.ubicacion{
-        text-align:right;
-    }
-    div.productos{
-        padding: 0px;
-    }
-    footer.footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    div.creador{
-        align-items: center;
-    }
+@media (min-width: 425px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  nav.navBar img.imgLogo {
+    width: 120px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
+    font-size: 20px;
+    padding: 18px;
+  }
+  h1.h1Index {
+    font-size: 50px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 2100px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 13px;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 160px;
+  }
+  main.nosotros {
+    padding: 20px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 30px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 16px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  div.buy div.productos p {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+  }
+  div.buy div.productos img.producto {
+    width: 150px;
+    border-radius: 10px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 10px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 200px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+  }
+  nav.navBar img.imgLogo {
+    width: 120px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
+    font-size: 15px;
+    padding: 25px;
+  }
+  h1.h1Index {
+    font-size: 50px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 800px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 13px;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 160px;
+  }
+  main.nosotros {
+    padding: 50px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 30px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 16px;
+  }
+  div.buy {
+    text-align: center;
+    margin-left: 50px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 600px;
+  }
+  div.buy div.productos p {
+    font-size: 20px;
+    padding: 0px;
+    text-align: left;
+  }
+  div.buy div.productos img.producto {
+    width: 150px;
+    border-radius: 10px;
+  }
+  button.comprar {
+    margin-left: 70px;
+  }
+  button.comprar a {
+    font-size: 16px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 10px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 15px;
+  }
+  nav.navBar img.imgLogo {
+    width: 150px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
+    font-size: 20px;
+    padding: 35px;
+  }
+  h1.h1Index {
+    font-size: 50px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 800px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 13px;
+    width: 250px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 200px;
+  }
+  main.nosotros {
+    padding: 100px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 30px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 16px;
+  }
+  div.buy {
+    text-align: center;
+    margin-left: 120px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 800px;
+  }
+  div.buy div.productos p {
+    font-size: 25px;
+    padding: 0px;
+    text-align: left;
+  }
+  div.buy div.productos img.producto {
+    width: 150px;
+    border-radius: 10px;
+  }
+  button.comprar {
+    margin-left: 140px;
+  }
+  button.comprar a {
+    font-size: 16px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 50px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  main.ingresar button {
+    margin: 0px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
+  }
+  nav.navBar img.imgLogo {
+    width: 180px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
+    font-size: 30px;
+    padding: 55px;
+  }
+  h1.h1Index {
+    font-size: 80px;
+  }
+  div.bienvenidos {
+    padding: 200px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 45px;
+  }
+  h1.h1Tienda {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 800px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 300px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 10px;
+    width: 250px;
+  }
+  main.nosotros {
+    padding: 150px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 100px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 40px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 26px;
+  }
+  div.buy {
+    text-align: center;
+    margin-left: 120px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 1200px;
+  }
+  div.buy div.productos p {
+    font-size: 35px;
+    padding: 0px;
+    text-align: left;
+  }
+  div.buy div.productos img.producto {
+    width: 250px;
+    border-radius: 10px;
+  }
+  button.comprar {
+    margin-left: 140px;
+  }
+  button.comprar a {
+    font-size: 26px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset label {
+    font-size: 30px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 100px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 500px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 25px;
+    height: 40px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+  main.ingresar button {
+    margin: 0px;
+  }
+  main.ingresar button a {
+    font-size: 30px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    font-size: small;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 2560px) {
+  nav.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px;
+  }
+  nav.navBar img.imgLogo {
+    width: 250px;
+  }
+  nav.navBar ul.navBar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  nav.navBar ul li {
+    font-size: 50px;
+    padding: 65px;
+  }
+  h1.h1Index {
+    font-size: 100px;
+  }
+  div.bienvenidos {
+    padding: 200px;
+  }
+  div.bienvenidos p.tuMate {
+    font-size: 70px;
+  }
+  h3 {
+    font-size: 45px;
+  }
+  h1.h1Tienda {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  div.containerCards {
+    height: 1400px;
+  }
+  div.containerCards div.card {
+    border: 2px solid #AA8B56;
+    width: 540px;
+    text-align: center;
+  }
+  div.containerCards div.card p {
+    font-size: 35px;
+    width: 540px;
+    text-align: center;
+  }
+  div.containerCards img.producto {
+    margin-top: 20px;
+    width: 440px;
+  }
+  main.nosotros {
+    padding: 150px;
+  }
+  main.nosotros div.quienesSomos {
+    padding: 100px;
+  }
+  main.nosotros div.quienesSomos h1 {
+    font-size: 40px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+  main.nosotros div.quienesSomos p {
+    font-size: 26px;
+  }
+  div.buy {
+    text-align: center;
+    margin-left: 120px;
+  }
+  div.buy div.productos {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 1200px;
+  }
+  div.buy div.productos p {
+    font-size: 35px;
+    padding: 0px;
+    text-align: left;
+  }
+  div.buy div.productos img.producto {
+    width: 250px;
+    border-radius: 10px;
+  }
+  button.comprar {
+    margin-left: 140px;
+  }
+  button.comprar a {
+    font-size: 26px;
+  }
+  main.ingresar {
+    padding: 50px 20px 20px 20px;
+  }
+  main.ingresar fieldset label {
+    font-size: 30px;
+  }
+  main.ingresar fieldset div.formulario {
+    padding: 100px;
+    margin: 10px;
+  }
+  main.ingresar fieldset div.formulario input {
+    width: 500px;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 25px;
+    height: 40px;
+  }
+  main.ingresar fieldset legend {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+  main.ingresar button {
+    margin: 0px;
+  }
+  main.ingresar button a {
+    font-size: 30px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .creador {
+    margin-bottom: 40px;
+  }
+  .creador img.imgLogo {
+    width: 200px;
+  }
+  .creador p {
+    font-size: 30px;
+  }
+  div.contacto {
+    margin: 40px;
+  }
+  div.contacto h4 {
+    font-size: 70px;
+  }
+  div.contacto img.rrss {
+    width: 100px;
+    height: 100px;
+  }
+  p.locationText {
+    font-size: 30px;
+  }
+  .bienvenidos {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-@media(min-width: 1500px){
-    img.imgLogo{
-        width: 150px;
-    }
-    nav.navBar{
-        padding: 0px;
-    }
-    main{
-        padding: 0px
-    }
-    div.productos{
-        padding: 0px;
-    }
-    .navBar li{
-        padding: 70px;
-        text-align: center;
-        font-size: 25px;
-    }
-    .nuestrosProductos p{
-        padding: 10px;
-    }
-    footer{
-        flex-direction: row;
-        text-align: center;
-        
-    }
-    .creador{
-        font-size: small;
-        padding: 10px;
-    }
-    .contacto{
-        padding: 10px;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        font-size: 80px;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-        padding: 10px;
-    }
-    p.tuMate{
-        font-size: 50px;
-    }
-    footer.footer{
-        width: 100%;
-    }
-    div.creador{
-        text-align: left;
-    }
-    div.ubicacion{
-        text-align:right;
-    }
-    main.nosotros{
-        padding: 150px;
-        font-size: 30px;
-    }
-    .quienesSomos h1{
-        padding-bottom: 15px;
-    }
-    footer.footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    div.creador{
-        align-items: center;
-    }
-}
-
-@media(min-width: 1290px){ 
-    img.imgLogo{
-        width: 150px;
-    }
-    nav.navBar{
-        padding: 0px;
-    }
-    main{
-        padding: 0px
-    }
-    div.productos{
-        padding: 0px;
-    }
-    .navBar li{
-        padding: 70px;
-        text-align: center;
-        font-size: 25px;
-    }
-    .nuestrosProductos p{
-        padding: 10px;
-    }
-    footer{
-        flex-direction: row;
-        text-align: center;
-        
-    }
-    .creador{
-        font-size: small;
-        padding: 10px;
-    }
-    .contacto{
-        padding: 10px;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        font-size: 80px;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-        padding: 10px;
-    }
-    p.tuMate{
-        font-size: 50px;
-    }
-
-    img.producto{
-        width: 170px;
-    }
-    footer.footer{
-        width: 100%;
-    }
-    div.creador{
-        text-align: left;
-    }
-    div.ubicacion{
-        text-align:right;
-    }
-    main.nosotros{
-        padding: 150px;
-        font-size: 30px;
-    }
-    .quienesSomos h1{
-        padding-bottom: 15px;
-    }
-    footer.footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        align-content: center;
-    }
-    div.creador{
-        align-items: center;
-    }
-}
-
-@media(min-width: 1025px){
-    img.imgLogo{
-        width: 150px;
-    }
-    .navBar li{
-        padding: 50px;
-        text-align: center;
-        font-size: 20px;
-    }
-    li{
-        padding: 20px;
-    }
-    .nuestrosProductos p{
-        padding: 10px;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .creador{
-        font-size: small;
-        padding: 10px;
-    }
-    .contacto{
-        padding: 10px;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-        padding: 10px;
-    }
-    .containerCards{
-        height:min-content;
-        margin: 50px;
-    }
-    .quienesSomos h1{
-        padding-bottom: 10px;
-    }
-    img.producto{
-        width: 250px;
-    }
-    .productos p{
-        font-size: 25px;
-    }
-    section.containerCards{
-        display: flex;
-        flex-direction: row;
-    }
-    div.card p{
-        width: 170px;
-    }
-    img.producto{
-        width: 170px;
-    }
-}
-
-@media(min-width: 768px){
-    nav.navBar{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-    ul.navBar{
-        display: flex;
-        flex-direction: row;
-    }
-    .navBar li{
-        padding: 30px;
-        text-align: left;
-        display: flex;
-        flex-direction: row;
-    }
-    li{
-        padding: 20px;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .creador{
-        font-size: small;
-        padding: 10px;
-    }
-    .contacto{
-        padding: 10px;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-        padding: 10px;
-    }
-    .containerCards{
-        display: flex;
-        flex-direction: column;
-        height:min-content;
-        margin: 50px;
-    }
-    main.nosotros{
-        text-align: center;
-        padding: 50px;
-        background-size: cover;
-        letter-spacing: normal;
-    }
-    .quienesSomos h1{
-        padding-bottom: 10px;
-    }
-    div.quienesSomos p{
-        font-size: 20px;
-    }
-    img.product{
-        width: 200px;
-    }
-    .productos p{
-        font-size: 25px;
-    }
-    label{
-        font-size: 20px;
-    }
-    div.formulario{
-        margin: 100px;
-    }
-    div .card{
-        display: flex;
-        flex-direction: column;
-        width: 50px;
-    }
-    section.containerCards{
-        display: flex;
-        flex-direction: row;
-    }
-    div.card p{
-        width: 170px;
-    }
-    img.producto{
-        width: 170px;
-    }
-}
-
-@media(min-width: 425px){
-    .nuestrosProductos{
-        width: 100%;
-        display: block;
-    }
-    .navBar{
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .navBar li{
-        padding: 20px;
-    }
-    li{
-        padding: 20px;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .creador{
-        font-size: small;
-    }
-    .bienvenidos{
-        width: 100%;
-    }
-    .h1Index{
-        width: 100%;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-    }
-    .containerCards{
-        height:min-content;
-        margin: 50px;
-    }
-    main.nosotros{
-        text-align: center;
-        padding: 30px;
-        background-size: cover;
-        letter-spacing: normal;
-        font-size: 15px;
-    }
-    .quienesSomos h1{
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-    img.producto{
-        width: 130px;
-    }
-    .productos p{
-        font-size: 15px;
-    }
-    button a{
-        font-size: 15px;
-    }
-    div.productos{
-        padding: 0px;
-    }
-    label{
-        font-size: 15px;
-    }
-    div.formulario{
-        margin: 50px;
-    }
-}
-
-@media(min-width: 376px){
-    .nuestrosProductos{
-        width: 100%;
-        display: block;
-    }
-    .navBar{
-        flex-direction: column;
-        text-align: center;
-    }
-    .navBar li{
-        padding: 20px;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .creador{
-        font-size: small;
-    }
-    .bienvenidos{
-        width: 100%;
-        text-align: center;
-    }
-    .h1Index{
-        width: 100%;
-        text-align: center;
-    }
-    .ubicacion{
-        flex-direction: column;
-    }
-    .containerCards{
-        height:min-content;
-        margin: 50px;
-    }
-    .producto{
-        width: 290px;
-    }
-    .card p{
-        width: 290px;
-        text-align: center;
-    }
-    main.nosotros{
-        text-align: center;
-        padding: 30px;
-        background-size: cover;
-        letter-spacing: normal;
-        font-size: 15px;
-    }
-    .quienesSomos h1{
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-    label{
-        font-size: 15px;
-    }
-    div.formulario{
-        margin: 30px;
-    }
-}
-
-@media(min-width: 320px){
-    .nuestrosProductos{
-        width: 100%;
-        display: block;
-    }
-    .navBar{
-        flex-direction: column;
-        text-align: center;
-    }
-    .navBar li{
-        padding: 20px;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-    }
-    .creador{
-        font-size: small;
-    }
-    .bienvenidos{
-        width: 100%;
-        text-align: center;
-    }
-    .h1Index{
-        width: 100%;
-        text-align: center;
-    }
-    .containerCards{
-        height:min-content;
-        margin: 50px;
-    }
-    .producto{
-        width: 100%;
-        justify-items: center;
-    }
-    .card p{
-        width: 100%;
-        text-align: center;
-    }
-    div.productos{
-        display: flex;
-        flex-direction: column;
-    }
-    main.nosotros{
-        text-align: center;
-        padding: 20px;
-        background-size: cover;
-        letter-spacing: normal;
-        font-size: 10px;
-    }
-    .quienesSomos h1{
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    div.productos p{
-        font-size: 20px;
-    }
-    img.producto{
-        width: 120px;
-    }
-    button a{
-        font-size: 15px;
-        padding: 5px;
-    }
-    label{
-        font-size: 15px;
-    }
-    div.formulario{
-        margin: 7px;
-        margin-top: 60px;
-        padding: 20px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

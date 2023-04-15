@@ -1,0 +1,127 @@
+@media(min-width: 425px){
+    //--------header-------------------
+        nav.navBar{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0px;
+            padding-bottom: 20px;
+            img.imgLogo{
+                width: 120px;
+            }
+            ul.navBar{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 0px;
+                padding-bottom: 30px;
+            }
+            ul li{
+            font-size: 20px;
+            padding: 18px;
+        }
+    }
+    //-----------index-------------------
+        h1.h1Index{
+            font-size: 50px;
+        }
+        div.bienvenidos{
+            p.tuMate{
+                font-size: 30px;
+            }
+        }
+        h3{
+            font-size: 25px;
+        }
+    
+    //-------------tienda--------------------
+    
+        h1.h1Tienda{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        div.containerCards{
+            height: 2100px;
+            div.card{
+                border: 2px solid #AA8B56;
+                width: 250px;
+                text-align: center;
+                p{
+                    font-size: 13px;
+                    width: 250px;
+                    text-align: center;
+                }
+            }
+            img.producto{
+                margin-top: 10px;
+                width: 160px;
+            }
+        }
+    //-------------nosotros------------------
+    
+        main.nosotros{
+            padding: 20px;
+            div.quienesSomos{
+                padding: 30px;
+                h1{
+                    font-size: 30px;
+                    line-height: 70px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    //-------------carrito-------------------
+    
+        div.buy{
+            div.productos{
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                p{
+                    font-size: 20px;
+                    padding: 0px;
+                    text-align: center;
+                }
+                img.producto{
+                    width: 150px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    //------------formulario-----------------
+    
+        main.ingresar{
+            padding: 50px 20px 20px 20px;
+            fieldset{
+                div.formulario{
+                    padding: 10px;
+                    margin: 10px;
+                    input{
+                        width: 200px;
+                        margin-bottom: 30px;
+                        padding: 10px;
+                        font-size: 12px;
+                    }
+                }
+                legend{
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+    //--------------footer-------------------
+        footer{
+            flex-direction: column;
+            text-align: center;
+        }
+        .creador{
+            font-size: small;
+        }
+        .bienvenidos{
+            width: 100%;
+            text-align: center;
+        }
+    }

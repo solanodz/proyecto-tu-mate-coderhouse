@@ -1,0 +1,44 @@
+main{
+    background-image: url("../assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bienvenidos{
+        background-size: cover;
+        padding: 50px 50px 800px 50px;
+        /* padding-left: 50px;
+        padding-bottom: 800px; */
+        color: #fff;
+        width: 100%;
+    }
+    .h1Index{
+        font-size: 70px;
+        background-size:auto;
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px;
+        text-align: center;
+    }
+    .bienvenidos{
+        p{
+            font-size: 50px;
+            background-color: #000;
+            color: #AA8B56;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+    .tuMate{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+h3{
+    background-color: #000;
+    font-size: 50px;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+}

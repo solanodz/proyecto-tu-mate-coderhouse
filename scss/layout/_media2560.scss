@@ -1,0 +1,166 @@
+@media(min-width: 2560px){
+    //--------header-------------------
+        nav.navBar{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding: 20px;
+            img.imgLogo{
+                width: 250px;
+            }
+            ul.navBar{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                padding: 0px;
+                padding-bottom: 30px;
+            }
+            ul li{
+            font-size: 50px;
+            padding: 65px;
+        }
+    }
+    //-----------index-------------------
+        h1.h1Index{
+            font-size: 100px;
+        }
+        div.bienvenidos{
+            padding: 200px;
+            p.tuMate{
+                font-size: 70px;
+            }
+        }
+        h3{
+            font-size: 45px;
+        }
+    
+    //-------------tienda--------------------
+    
+        h1.h1Tienda{
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+        div.containerCards{
+            height: 1400px;
+            div.card{
+                border: 2px solid #AA8B56;
+                width: 540px;
+                text-align: center;
+                p{
+                    font-size: 35px;
+                    width: 540px;
+                    text-align: center;
+                }
+            }
+            img.producto{
+                margin-top: 20px;
+                width: 440px;
+            }
+        }
+    //-------------nosotros------------------
+    
+        main.nosotros{
+            padding: 150px;
+            div.quienesSomos{
+                padding: 100px;
+                h1{
+                    font-size: 40px;
+                    line-height: 70px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font-size: 26px;
+                }
+            }
+        }
+    //-------------carrito-------------------
+    
+        div.buy{
+            text-align: center;
+            margin-left: 120px;
+            div.productos{
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                width: 1200px;
+                p{
+                    font-size: 35px;
+                    padding: 0px;
+                    text-align: left;
+                }
+                img.producto{
+                    width: 250px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        button.comprar{
+            margin-left: 140px;
+            a{
+                font-size: 26px;
+            }
+        }
+    //------------formulario-----------------
+    
+        main.ingresar{
+            padding: 50px 20px 20px 20px;
+            fieldset{
+                label{
+                    font-size: 30px;
+                }
+                div.formulario{
+                    padding: 100px;
+                    margin: 10px;
+                    input{
+                        width: 500px;
+                        margin-bottom: 50px;
+                        padding: 10px;
+                        font-size: 25px;
+                        height: 40px;
+                    }
+                }
+                legend{
+                    font-size: 55px;
+                    margin-bottom: 40px;
+                }
+            }
+            button{
+                margin: 0px;
+                a{
+                font-size: 30px;
+                }
+            }
+        }
+    
+    //--------------footer-------------------
+        footer{
+            flex-direction: column;
+            text-align: center;
+        }
+        .creador{
+            img.imgLogo{
+                width: 200px;
+            }
+            p{
+            font-size: 30px;
+            }
+            margin-bottom: 40px;
+        }
+        div.contacto{
+            margin: 40px;
+            h4{
+                font-size: 70px;
+            }
+            img.rrss{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        p.locationText{
+            font-size: 30px;
+        }
+        .bienvenidos{
+            width: 100%;
+            text-align: center;
+        }
+    }

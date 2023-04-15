@@ -1,0 +1,41 @@
+footer{
+    color: #fff;
+    background-color: #000;
+    flex-direction: row;
+    text-align: center;
+    .imgLogo{
+        width: 150px;
+    }
+    .location{
+        width: 40px;
+        height: 40px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    .nuestrosProductos{
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+    .contacto{
+        text-align: center;
+    }
+    .creador{
+        font-size: small;
+        padding: 10px;
+        align-items: center;
+    }
+    .contacto{
+        padding: 10px;
+    }
+    iframe{
+        width: 280px;
+        height: 250px;
+    }
+    img.rrss{
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "copia-proyecto-mates",
+  "version": "1.0.0",
+  "description": "El proyecto trata sobre una pagina web de ventas de mates, bombillas y termos. Cuenta con 5 documentos HTML entre los cuales se encuentra la pagina principal (index.html), una pagina en la que se encuentran los productos (tienda.html), la pagina en la que nos presentamos como marca (nosotros.html), una pagina en la que podremos ver los productos que estamos por comprar (carrito.html) y por ultimo una pagina en la que podremos iniciar sesión a nuestra cuenta (ingresar.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
