@@ -10,3 +10,4 @@ Herramientas utilizadas:
 
 Los 5 documentos HTML son full responsive (desde 320px hasta 1440px).
 Lo único que tiene de bootstrap es el carrusel que se encuentra en el documento index.html por debajo del h3 "Nuestros productos:".
+La parte de CSS esta trabajada con SASS.

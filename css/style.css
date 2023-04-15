@@ -82,7 +82,7 @@ main .tuMate {
   text-align: center;
 }
 
-h3 {
+h2 {
   background-color: #000;
   font-size: 50px;
   padding: 15px;
@@ -228,7 +228,7 @@ footer .location {
   width: 40px;
   height: 40px;
 }
-footer h4 {
+footer h3 {
   font-size: 30px;
 }
 footer .nuestrosProductos {
@@ -285,7 +285,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 30px;
   }
-  h3 {
+  h2 {
     font-size: 25px;
   }
   h1.h1Tienda {
@@ -391,7 +391,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 40px;
   }
-  h3 {
+  h2 {
     font-size: 25px;
   }
   h1.h1Tienda {
@@ -499,7 +499,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 30px;
   }
-  h3 {
+  h2 {
     font-size: 25px;
   }
   h1.h1Tienda {
@@ -606,7 +606,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 30px;
   }
-  h3 {
+  h2 {
     font-size: 25px;
   }
   h1.h1Tienda {
@@ -724,7 +724,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 30px;
   }
-  h3 {
+  h2 {
     font-size: 25px;
   }
   h1.h1Tienda {
@@ -848,7 +848,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 50px;
   }
-  h3 {
+  h2 {
     font-size: 45px;
   }
   h1.h1Tienda {
@@ -980,7 +980,7 @@ footer img.rrss {
   div.bienvenidos p.tuMate {
     font-size: 70px;
   }
-  h3 {
+  h2 {
     font-size: 45px;
   }
   h1.h1Tienda {
@@ -1086,7 +1086,7 @@ footer img.rrss {
   div.contacto {
     margin: 40px;
   }
-  div.contacto h4 {
+  div.contacto h3 {
     font-size: 70px;
   }
   div.contacto img.rrss {
