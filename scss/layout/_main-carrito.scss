@@ -8,7 +8,7 @@
         padding: 10px;
         margin: 20px;
         margin-top: 0px;
-        border: #AA8B56 2px solid;
+        border: $marron 2px solid;
         border-radius: 10px;
         .producto{
             width: 250px;
@@ -20,7 +20,7 @@
 }
 
 button{
-    background-color: #AA8B56;
+    background-color: $marron;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;

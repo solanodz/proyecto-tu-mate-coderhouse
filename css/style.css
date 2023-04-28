@@ -1,6 +1,6 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
@@ -56,8 +56,6 @@ main {
 main .bienvenidos {
   background-size: cover;
   padding: 50px 50px 800px 50px;
-  /* padding-left: 50px;
-  padding-bottom: 800px; */
   color: #fff;
   width: 100%;
 }

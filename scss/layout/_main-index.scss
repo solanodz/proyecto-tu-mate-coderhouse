@@ -5,8 +5,6 @@ main{
     .bienvenidos{
         background-size: cover;
         padding: 50px 50px 800px 50px;
-        /* padding-left: 50px;
-        padding-bottom: 800px; */
         color: #fff;
         width: 100%;
     }
@@ -21,7 +19,7 @@ main{
         p{
             font-size: 50px;
             background-color: #000;
-            color: #AA8B56;
+            color: $marron;
             align-items: center;
             padding: 10px;
             width: 100%;
